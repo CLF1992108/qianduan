@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML中的div和span</title>
+</head>
+<body>
+    <!--
+        什么是div和span？
+        div和span就是图层
+        图层的作用就是灵活布局
+        图层就是一个一个的盒子，div嵌套div就是盒子嵌套盒子
+
+        早起的网页布局都是使用table，比较死板
+        现代网页都是使用div布局，只要定义div的top和left就能确定div的位置可以重叠
+
+        div和span的区别
+        div独占一行
+        span不会独占一行
+    -->
+    <div id="div1">我是div</div>
+    <div id="div2">我是div</div>
+
+    <span id="span1">我是span</span>
+    <span id="span2">我是span</span>
+
+    <div id="div3">
+        <div>
+            <div>
+                test
+            </div>
+        </div>
+    </div>
+</body>
+</html>

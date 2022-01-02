@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>用户注册</title>
+</head>
+<body>
+    <!--
+        method:
+        get:提交的数据会在地址栏上显示
+        post：提交的数据不会再地址栏上显示
+        敏感的数据建议使用post方式提交
+        post提交的时候数据格式和get的一致为name&value
+    -->
+    <form action="http://localhost:8080/jd/regist" method="post">
+        用户名<input type="text" name="username" /><br />
+        密码<input type="password" name="password" /><br />
+        确认密码<input type="password" /><br />
+        性别<input type="radio" name="sex" value="1" />男
+            <input type="radio" name="sex" value="0" checked />女<br /><!--默认选中-->
+        爱好<input type="checkbox" name="interest" value="smoke" checked/>抽烟
+        <input type="checkbox" name="interest" value="drink" checked/>喝酒<!--默认选中-->
+        <input type="checkbox" name="interest" value="firehair"/>烫头<br />
+        学历<select name="grade">
+                <option value="gz">高中</option>
+                <option value="dz">大专</option>
+                <option value="bk" selected>本科</option>  <!--默认选中-->
+                <option value="ss">硕士</option>
+            </select><br />
+        简介 <textarea name="introduct" cols="60" rows="20"></textarea><br />
+        <input type="submit" value="注册"/>
+        <input type="reset" value="清空"/>
+    </form>
+    <!--
+        提交数据格式：
+        http://localhost:8080/jd/regist?username=qweqwe&password=123&sex=0&interest=smoke&interest=drink&grade=gz&introduct=123123123123
+    -->
+
+    <!--超链接也会携带数据向服务器发起请求，只不过这数据用户不能填写
+    并且只能是get方式-->
+    <a href="http://localhost:8080/jd/regist?username=qweqwe&password=123">提交</a>
+</body>
+</html>

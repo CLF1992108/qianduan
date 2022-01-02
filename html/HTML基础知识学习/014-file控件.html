@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="file">
+    <form action="http://localhost:8080/oa/save">
+        <!--hidden 界面上不会显示内容但是提交数据的时候会携带-->
+        <input type="hidden" name="userid" value="111" />
+        用户名<input type="text" name="username" />
+        <input type="submit" value="提交"/>
+    </form>
+</body>
+</html>

@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>readonly disabled</title>
+</head>
+<body>
+    <!--
+        readonly和disabled都是只读的
+        readonly会将数据提交给服务器，disabled不会将数据提交给服务器（即使设置了name属性）
+    -->
+    <form action="http://localhost:8080/taobao/save">
+        用户编码 <input type="text" name="usercode" value="123" readonly />
+        用户名称 <input type="text" name="username" value="张三" disabled />
+        <input type="submit" value="提交">
+    </form>
+</body>
+</html>
