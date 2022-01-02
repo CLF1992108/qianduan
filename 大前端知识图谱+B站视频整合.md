@@ -18,9 +18,9 @@ B站学习资源整合
 ## 超文本标记语言
 （HTML）
 ### 1. HTML基础知识学习
-### HTML全套基础教程：https://www.bilibili.com/video/BV11t411K74Q
+### HTML全套基础教程：https://www.bilibili.com/video/BV11t411K74Q    √
 ### 2. HTML 编写规则 和语义化写法
-### HTML 速成：https://www.bilibili.com/video/BV1vs411M7aT
+### HTML 速成：https://www.bilibili.com/video/BV1vs411M7aT           √
 ### 3. 表单和验证
 ### html5表单验证：https://www.bilibili.com/video/BV16K4y1Z7Gb
 ### 4. 公约和最佳实践方法
