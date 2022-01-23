@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>html5约束验证API之validity演示</title>
+</head>
+<style>
+    input[type="search"]::-webkit-search-cancel-button{
+        -webkit-appearance: none;
+        height: 15px;
+        width: 15px;
+        background: blue;
+    }
+</style>
+<body>
+    <form action="">
+        <input type="text" id="username" value="6666666" required maxlength="5" minlength="2">
+        <input type="search">
+
+        <input type="number" name="number" id="numbers" min="2" max="9">
+        <input type="submit" value="提交">
+    </form>
+    <script>
+        // console.log(document.getElementById('username')===username)
+        console.log(username.validity)
+
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>html5基本表单特性演示</title>
+</head>
+<body>
+    <form action="http://127.0.0.1:5555/html/html%E8%A1%A8%E5%8D%95%E9%AA%8C%E8%AF%81/html5%E5%9F%BA%E6%9C%AC%E8%A1%A8%E5%8D%95%E7%89%B9%E6%80%A7%E6%BC%94%E7%A4%BA.html" method="post" enctype="multipart/form-data" >
+        
+        <input type="file"/>
+        <label for="">用户名</label>
+        <input type="text" name="user" placeholder="请输入用户名" required autofocus autocomplete="on"/>
+        <label for="">工号</label>
+        <input type="text" name="gonghao" pattern="^\d{5}[clf]$"/>
+        
+        <input type="text" list="tips">
+        <dataList id="tips">
+            <option value="erterrer"></option>
+            <option value="erterr123er"></option>
+            <option value="er123terrer"></option>
+        </dataList>
+
+        <label for="man">男</label>
+        <input type="radio" name="sex" id="man" required>
+        <label for="woman">女</label>
+        <input type="radio" name="sex" id="woman">
+        <input type="submit" formnovalidate>
+        <input type="submit">
+
+    </form>
+</body>
+</html>
