@@ -11,7 +11,7 @@
 <body>
 
     <!-- heading -->
-    <h1>heading 1</h1>
+    <h1 id="h1id">heading 1</h1>
     <h2>heading 1</h2>
     <h3>heading 1</h3>
     <h4>heading 1</h4>
@@ -101,5 +101,10 @@
 
 
 </body>
-
+<script>
+document.getElementById('h1id').addEventListener('mousedown',(e)=>{
+    debugger
+    console.log(e)
+})
+</script>
 </html>
